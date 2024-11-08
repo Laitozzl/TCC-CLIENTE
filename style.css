@@ -6,6 +6,7 @@
 }
 
 body{
+    max-width: 100%;
     height: 100vh;
     background-size: cover;
 }
@@ -23,7 +24,7 @@ a{
 }
 
 a:hover{
-    color: orange;
+    color: rgb(10, 119, 25);
 }
 
 header{
@@ -48,7 +49,7 @@ header{
 
 .barramenu .links{
     display: flex;
-    gap: 2rem;
+    gap: 8em;
 }
 
 .barramenu .barra_btn{
@@ -58,6 +59,7 @@ header{
 }
 
 .dropdown_menu{
+    background-color: #000;
     display: none;
     position: absolute;
     right: 2rem;
@@ -84,7 +86,7 @@ header{
     justify-content: center;
 }
 
-@media(max-width: 950px){
+@media(max-width: 769px){
     .barramenu .links{
         display: none;
     }
@@ -98,11 +100,417 @@ header{
     }
 }
 
-@media(max-width: 950px){
+@media(max-width: 769px){
     .dropdown_menu{
         left: 2rem;
         width: unset;
     }
 }
 
+
 /*Página*/
+.page1{
+    height: 100vh;
+    width: 100%;
+}
+
+
+.grupo,
+.slide{
+    width: 100%;
+    height: 100%;
+}
+
+.slide .pagina1{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.slide .imagem-data{
+    position: absolute;
+    top: 3%;
+    left: 22%;
+    transform: translate(-50%, 50%);
+}
+
+.imagem-data span.texto{
+    font-size: 44px;
+    font-weight: 400;
+}
+
+.imagem-data h3{
+    font-size: 28px;
+    font-weight: 200;
+    text-align: justify;
+}
+
+.slide .pagina2{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.slide .imagem-data2{
+    position: absolute;
+    top: -2%;
+    left: 22%;
+    transform: translate(-50%, 50%);
+}
+
+.imagem-data2 span.texto{
+    font-size: 44px;
+    font-weight: 400;
+}
+
+.imagem-data2 h3{
+    font-size: 28px;
+    font-weight: 200;
+    text-align: justify;
+}
+
+.seta-btn{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.swiper-button-next{
+   right: 50px;
+}
+.swiper-button-prev{
+    left: 50px;
+}
+
+.seta-btn:hover{
+    background-color: rgba(255, 255, 255, 0.4);
+}
+.seta-btn::before,
+.seta-btn::after{
+    font-size: 25px;
+    color: #fff;
+}
+
+.swiper-pagination-bullet{
+    opacity: 1;
+    height: 12px;
+    width: 12px;
+    background-color: #fff;
+    visibility: hidden;
+}
+
+.swiper-pagination-bullet-active{
+    border: 2px solid #fff;
+    background-color: green;
+}
+
+@media screen and (max-width: 769px){
+    .seta-btn{
+        visibility: hidden;
+    }
+
+    .swiper-pagination-bullet{
+        visibility: visible;
+    }
+}
+
+/*Página 2*/
+
+.page2{
+    width: 100%;
+    height: 100%;
+    padding: 80px;
+}
+
+.lugares{
+    height: 400px;
+    width: 400px;
+    background-color: #addf98;
+    border-radius: 20%;
+}
+
+.lugares .gavea{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20%;
+    padding: 15px;
+}
+
+.lugares .imagemdata{
+    position: absolute;
+    top: 152%;
+    left: 8%;
+}
+
+.imagemdata span.text{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.imagemdata p{
+    color: #fff;
+    margin-top: 15px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.lugares .imagemdata2{
+    position: absolute;
+    top: 152%;
+    left: 41%;
+}
+
+.imagemdata2 span.text{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.imagemdata2 p{
+    color: #fff;
+    margin-top: 15px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.lugares .imagemdata3{
+    position: absolute;
+    top: 152%;
+    left: 74%;
+}
+
+.imagemdata3 span.text{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.imagemdata3 p{
+    color: #fff;
+    margin-top: 15px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.votacao{
+    margin: 100px;
+    margin-left: -10px;
+    display: flex;
+    gap: 230px;
+}
+
+.voto h1{
+    font-size: 60px;
+}
+
+.voto p{
+    font-size: 40px;
+}
+
+
+/*pagina 3*/
+.page3{
+    background: #54923a;
+    width: 100%;
+    height: 1050px;
+}
+
+.title{
+    padding:  80px;
+
+    text-align: center;
+    justify-content: center;
+    color: white;
+}
+
+.title h3 {
+    font-size: 40px;
+}
+
+.title h1 {
+    font-size: 65px;
+}
+
+.quadrado{
+    height: 400px;
+    width: 500px;
+    background-color: #addf98;
+    border: solid;
+    border-color: white;
+    border-radius: 10%;
+}
+
+.servicos{
+    height: 60px;
+    padding: 80px;
+    margin-left: -10px;
+    display: flex;
+    gap: 250px;
+    margin-bottom: 0;
+}
+
+.exemplos{
+    width: 100%;
+    height: 30%;
+    text-align: center;
+    justify-content: center;
+}
+
+.exemplos2{
+    width: 100%;
+    height: 30%;
+    text-align: center;
+    justify-content: center;
+}
+
+.exemplos3{
+    width: 100%;
+    height: 30%;
+    text-align: center;
+    justify-content: center;
+}
+
+.exemplos h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;;
+    margin-top: 25px;
+    font-size: 45px;
+}
+
+.exemplos p{
+    padding: 20px;
+    margin-top: 28px;
+    text-align: center;
+    justify-content: center;
+    font-size: 25px;
+}
+
+.exemplos2 h1{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 25px;
+    font-size: 45px;
+}
+
+.exemplos2 p{
+    padding: 20px;
+    margin-top: 25px;
+    text-align: center;
+    justify-content: center;
+    font-size: 25px;
+}
+
+.exemplos3 h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;;
+    margin-top: 45px;
+    font-size: 45px;
+}
+
+.exemplos3 p{
+    padding: 20px;
+    margin-top: 55px;
+    text-align: center;
+    justify-content: center;
+    font-size: 25px;
+}
+
+@media(max-width:800px){
+    .main{
+        max-width: 100%;
+    }
+
+    .servicos{
+        display: grid;
+    }
+
+    .quadrado{
+    height: 400px;
+    width: 500px;
+    background-color: #addf98;
+    border: solid;
+    border-color: white;
+    border-radius: 10%;
+}
+}
+
+/*Rodapé*/
+
+footer{
+    width: 100%;
+}
+
+#conteudo{
+    background-color: #addf98;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 3rem 3.5rem;
+    justify-content: center;
+    text-align: center;
+}
+
+#Logo{
+    align-items: center;
+    margin: 35px;
+}
+
+#redes .icons{
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    gap: 5.5rem;
+    margin-top: 1.5rem
+}
+
+.icon{
+    font-size: 40px;
+}
+
+.icones{
+    width: 70px;
+    height: 70px;
+}
+
+#email{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.subscribe{
+    font-size: 25px;
+}
+
+
+#input-wrap{
+    display: flex;
+    align-items: center;
+    background-color:#fff;
+    border-radius: 4px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#input-wrap input{
+    all: unset;
+    padding: 0.75rem;
+    width: 100%;
+}
+
+#input-wrap button{
+    background-color: gray;
+    border: none;
+    color: white;
+    padding: 0px 1.25rem;
+    font-size: 2.25rem;
+    height: 100%;
+    border-radius: 0px 4px 4px 0px;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+#input-wrap button:hover{
+    opacity: 0.8;
+}

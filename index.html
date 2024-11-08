@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Hora de Aventura</title>
+    <link rel="stylesheet" href="../css/swiper-bundle.min.css">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
@@ -27,11 +28,159 @@
     </header>
     <hr class="linha">
 
-    <main>
-        <section class="page1">
-            
+<div class="main">
+        <section class="page1 swiper mySwiper">
+                <div class="grupo swiper-wrapper">
+                    <div class="slide swiper-slide">
+                        <img src="../images/page1.png" class="pagina1"/>
+                        <div class="imagem-data">
+                <span class="texto"><h1>Viagem Nacional</h1></span>
+                <h3>Lorem ipsum dolor, sit amet consectetur <br>adipisicing elit. Fuga quae architecto <br>
+                temporibus, esse eius illo asperiores error <br>
+                voluptas cupiditate voluptatibus nam itaque <br>
+                quisquam sunt accusantium est doloribus <br>
+                provident. In, numquam. Lorem ipsum dolor <br>
+                sit amet consectetur adipisicing elit. Quam, <br>
+                sit unde incidunt totam officia, possimus <br> laborum cum ut magni repellendus commodi <br>itaque illum aperiam voluptatum eveniet <br>
+                recusandae sunt rerum sapiente.</h3>
+                    </div>
+                </div>
+
+                <div class="slide swiper-slide">
+                    <img src="../images/page2.png" class="pagina2"/>
+                    <div class="imagem-data2">
+            <span class="texto"><h1>Turismo <br>
+                                    Responsavel</h1></span>
+            <h3>Lorem ipsum dolor, sit amet consectetur <br>adipisicing elit. Fuga quae architecto <br>
+            temporibus, esse eius illo asperiores error <br>
+            voluptas cupiditate voluptatibus nam itaque <br>
+            quisquam sunt accusantium est doloribus <br>
+            provident. In, numquam. Lorem ipsum dolor <br>
+            sit amet consectetur adipisicing elit. Quam, <br>
+            sit unde incidunt totam officia, possimus <br> laborum cum ut magni repellendus commodi <br>itaque illum aperiam voluptatum eveniet <br>
+            recusandae sunt rerum sapiente.</h3>
+                </div>
+            </div>
+            </div>
+            <div class="swiper-button-next seta-btn"></div>
+            <div class="swiper-button-prev seta-btn"></div>
+            <div class="swiper-pagination"></div>
         </section>
-    </main>
+
+        <section class="page2">
+            <div class="voto">
+                <h1>Votação</h1>
+                <p>para próxima viagem</p>
+            </div>
+
+            <div class="votacao">
+                <div class="lugares">
+                    <img src="../images/gaveafoto.jpg" class="gavea"/>
+                        <div class="imagemdata">
+                    <span class="text"><h1>Em breve!</h1> </span>
+                    <p>entre no nosso grupo <br> de whatsapp</p>
+                        </div>
+                </div>
+                <div class="lugares">
+                    <img src="../images/gaveafoto.jpg" class="gavea"/>
+                        <div class="imagemdata2">
+                    <span class="text"><h1>Em breve!</h1> </span>
+                    <p>entre no nosso grupo <br> de whatsapp</p>
+                        </div>
+                </div>
+                <div class="lugares">
+                    <img src="../images/gaveafoto.jpg" class="gavea"/>
+                        <div class="imagemdata3">
+                    <span class="text"><h1>Em breve!</h1> </span>
+                    <p>entre no nosso grupo <br> de whatsapp</p>
+                        </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="page3">
+            <div class="title">
+                <h3>Por que nos</h3>
+                <h1>Escolher?</h1>
+        </div>
+            <div class="servicos">
+            <div class="quadrado">
+                <div class="exemplos">
+                <h1>Serviços Personalizados</h1>
+                <p>Iremos te oferecer melhor estadia, ônibus e guia para uma viagem tranquila e aproveitada.</p>
+            </div>
+            </div>
+            <div class="quadrado">                <div class="exemplos2">
+                <h1>Preço <br>
+                    Acessivel</h1>
+                <p>Preparamos os melhores preços 
+                    para você economizar viajando.</p>
+            </div></div>
+            <div class="quadrado">                <div class="exemplos3">
+                <h1>Atendimento </h1>
+                <p>Priorizaremos a segurança e a 
+                    saúde de todos presentes durante
+                    a viagem.</p>
+            </div></div>
+        </div>
+        </section>
+</div>
+    <footer>
+        <div id="conteudo">
+          <div id="Logo"><h1>Logo</h1></div>
+          <div id="redes">
+            <h1>Contatos:</h1>
+            <ul class="icons">
+              <li class="icones">
+                <a href="#" class="icon">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <h4>Instagram</h4>
+              </li>
+              <li class="icones">
+                <a href="#" class="icon">
+                  <i class="fa-solid fa-envelope"></i>
+                </a>
+                <h4>email</h4>
+              </li>
+              <li class="icones">
+                <a href="#" class="icon">
+                 <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                <h4>Whatsapp</h4>
+              </li>
+            </ul>
+          </div>
+          <div id="email">
+            <p class="subscribe">Escreva para nosso email</p>
+            <form>
+              <div id="input-wrap">
+                <input type="email" placeholder="exemplo@gmail.com"/>
+                <button type="enviar" id="botao">
+                  <i class="fas fa-paper-plane"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </footer>
+
+<script src="../js/swiper-bundle.min.js"></script>
+
+    <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
 
 <script src="../js/script.js"></script>
 
